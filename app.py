@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 # -----------------------------
 # Cargar modelo y objetos
@@ -117,3 +117,4 @@ st.write("Probabilidad Riesgo Bajo:", round(prob_bajo*100,2), "%")
 st.write("Probabilidad Riesgo Medio:", round(prob_medio*100,2), "%")
 
 st.write("Probabilidad Riesgo Alto:", round(prob_alto*100,2), "%")
+
